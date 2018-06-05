@@ -1,6 +1,6 @@
 // Setup a standard Express server by typing the following code
 const express = require('express');
-const keys = ('./config/keys')
+const keys = ('./config/keys');
 const stripe = require('stripe')(keys.stripeSecretKey);
 const bodyParser = require('body-parser');
 const exphbs = require('express-handlebars');
