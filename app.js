@@ -28,7 +28,7 @@ app.get('/', (req, res) => {
 
 // Charge Route
 app.post('/charge', (req, res) => {
-    const amount = 500000;    
+    const amount = 50000;    
     
     stripe.customers.create({
         email: req.body.stripeEmail,
