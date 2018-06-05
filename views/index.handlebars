@@ -1,0 +1,32 @@
+<section class="py-2">
+    <div class="row">
+        <div class="col-md-6 text-center">
+            <h1 class="display-3 mt-5 mt-3 pt-5">
+                Web Dev Guru
+            </h1>
+            <p class="lead">
+                Learn what and how I'm learning and you'll be a Web Dev Guru in no time too!
+            </p>
+            <form action="/charge" method="POST">
+                <script
+                src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                data-key="{{stripePublishableKey}}"
+                data-amount="4000"
+                data-name="Nerdy Kat Services"
+                data-description="Web & Design Services Galore!"
+                data-image="/img/marketplace.png"
+                data-locale="auto">
+                </script>
+
+                <script>
+                // Hide default Stripe button first...
+                document.getElementsByClassName('stripe-button-el')[0] .style.display = 'none';
+                </script>
+                <button type="submit" class="btn btn-outline-light text-dark btn-lg">Only $500!</button>
+            </form>
+        </div>
+        <div class="col-md-6 text-center">
+            <img src="/img/homepage.PNG" alt="image of nerdykat brand" class="rounded img-fluid">
+        </div>
+    </div>
+</section>
